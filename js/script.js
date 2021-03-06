@@ -1,8 +1,14 @@
-let menu = document.querySelector('.nav-button');
+let open = document.querySelector('.nav-button');
+let close = document.querySelector('.nav-button-close');
 
-menu.onclick = function() {
-    menu.classList.toggle('button-open');
-    menu.classList.toggle('button-close');
+open.onclick = function() {
+    open.classList.toggle('button-open');
+    close.classList.toggle('close-button');
+};
+
+close.onclick = function() {
+    open.classList.toggle('button-open');
+    close.classList.toggle('close-button');
 };
 
 // function openNav() {
