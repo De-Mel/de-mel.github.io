@@ -509,6 +509,10 @@ img {
     display: none;
 }
 
+.nav-button-close {
+    display: none;
+}
+
 /* planshet */
 
 @media all and (max-width: 768px) {
@@ -670,13 +674,13 @@ img {
         position: absolute;
         /* menu 320px */
         height: 100vh;
-        width: 85%;
+        width: 100%;
         z-index: 3;
         top: 0;
         right: 0;
         background-color: #151C22;
         /* color: #fff; */
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         /* transition: all 1.5s; */
         padding-top: 30px;
         text-align: center;
@@ -692,9 +696,30 @@ img {
             right: 0;
             opacity:1}
     }
-    /* .close-button {
+    .nav-button-close {
+        display: block;
         cursor: pointer;
-    } */
+        top: 5px;
+        width: 20px;
+        height: 10px;
+        border: none;
+        border-top: 2px solid #FFFFFF;
+        left: 20px;
+        background-color: transparent;
+        position: relative;
+        transform: rotate(45deg);
+    }
+
+    .nav-button-close::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: #FFFFFF;
+        left: 0;
+        top: -2px;
+        transform: rotate(90deg);
+    }
 
     .nav-link {
         color: #FFFFFF;
